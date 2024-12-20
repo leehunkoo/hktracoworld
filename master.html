@@ -4,6 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>트라코월드 송년회</title>
+    <style>
+        boby{
+            width: 100vh;
+        }
+        .listbox{
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 10px;
+            list-style: none;
+            text-align: center;
+            font-weight: bold;
+            color: rgb(255, 0, 0, 1.0);
+            text-shadow: 1px 1px 2px;
+        }
+        .list1{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            color: rgb(0, 128, 0, 1.0);
+            text-shadow: 1px 1px 2px;
+        }
+
+        .red{
+            color:rgb(250, 5, 5, 1);
+        }
+
+        .green{
+            color: rgb(0, 128, 0, 1);
+        }
+         /*자바*/
+        .list1 {
+            animation: fadeIn 2s ease-in-out;
+        }
+        .listbox li {
+            opacity: 0;
+            animation: fadeInSlide 2s ease-in-out forwards;
+        }
+        .listbox li:nth-child(1) {
+            animation-delay: 1s;
+        }
+        .listbox li:nth-child(2) {
+            animation-delay: 2s;
+        }
+        .listbox li:nth-child(3) {
+            animation-delay: 3s;
+        }
+        .listbox li:nth-child(4) {
+            animation-delay: 4s;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes fadeInSlide {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 
     <!-- Open Graph 메타 태그 -->
     <meta property="og:title" content="트라코월드 송년회">
@@ -20,5 +92,24 @@
         src="https://www.canva.com/design/DAGUxPYp96U/u8r7Rz0umwmF0bNhX9bBXg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
         </iframe>
     </div>
+    <div class="memo">
+        <h4 class="list1">
+            <span class="red">🎅 전사</span>&nbsp;
+            <span class="green">임직원</span>&nbsp;
+            <span class="red">여러분</span>&nbsp;
+            <span class="green">올</span>&nbsp;
+            <span class="red">한해도</span>&nbsp;
+            <span class="green">수고</span>&nbsp;
+            <span class="red">하셨</span>
+            <span class="green">습니다. 🎄</span>&nbsp;
+        </h4>
+        <ul class="listbox">
+            <li class="green">🦌Happy</li>
+            <li class="red">Merry Christmas!</li>
+            <li class="green">🎉 Happy</li>
+            <li class="red">New Year! 🎉</li>
+        </ul>
+    </div>
+    <hr>
 </body>
 </html>
